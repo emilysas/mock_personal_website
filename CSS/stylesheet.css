@@ -1,0 +1,325 @@
+*{
+	font-family: 'Muli', sans-serif;
+	
+}
+header{
+	background: black;
+	height: 45%;
+	margin: 0 0 0 0;
+}
+body{
+	max-width: 100%;
+	background: white;
+}
+
+/************ HEADER ***************/
+
+#portrait{
+	display: block;
+	z-index: 1;
+	max-width: 200px;
+	border: white solid 5px;
+	border-radius: 100%;
+    margin: 2% auto 0 auto;
+    
+}
+
+h1{
+	display: block;
+	margin: 1% auto 0 auto;
+	color: white;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	font-size: 3em;
+}
+h3{
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-left: 5%;
+	color: #E32636;
+	font-size: 1.1em;
+}
+
+h4{
+	color: #E32636;
+	font-size: .75em;
+}
+
+nav li, a, a:visited{
+	color:white;
+	text-decoration:none;
+	list-style:none;
+	text-align: center;
+	font-size: .85em;
+}
+
+nav .page{
+	border-bottom: #E32636 solid 5px;
+}
+
+nav a:hover{
+	color: #E32636;
+}
+
+nav li{
+	display: inline;
+	padding: 2%;
+}
+
+nav{
+	margin: 5% auto 5% auto;
+	text-align: center;
+}
+
+div {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+/************ About Me ***************/
+.accordion{
+	margin-top: 3%;
+	margin-left: 5%;
+	position: relative;
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 50%;
+}
+.accordion h3{
+	outline: none;
+	color:#0076A3;
+	width: 100%;
+	line-height: 1em;
+	font-size: 1.25em;
+}
+.content{
+	width: 80%;
+	display: block;
+	position: relative;
+}
+.accordion p{
+	width: 100%;
+}
+
+p, li{
+	font-family: 'Muli', sans-serif;
+	font-size: .75em;
+	text-align: justify;
+}
+
+
+span{
+	border-bottom: white solid 2px;
+}
+
+.blog{
+	width: 45%;
+	position: relative;
+	display: inline-block;
+	float: right;
+	clear: right;
+	margin: 2% 0 2% 0;
+	padding-right: 0;
+	background-color: white;
+}
+
+
+
+/************ Gallery ***************/
+
+.coding_gallery, .baking_gallery{
+	display: inline-block;
+	text-align: left;
+	max-width:100%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+}
+.coding_gallery img, .baking_gallery img{
+	max-width: 80%;
+	margin: 5% 2% 0 2%;
+	position: relative;
+	border: black solid 5px;
+	border-radius: 5px;
+}
+
+.coding_gallery h4, .baking_gallery h4{
+	margin-top: 5%;
+	padding-left: 2%;
+	color: #0076A3;
+
+}
+.coding_gallery p, .baking_gallery p{
+	display: inline-block;
+	max-width: 80%;
+	margin: 0 auto;
+	padding-left: 2%;
+	position: relative;
+	text-align: justify;	
+}
+
+#zoo a, #catinhat a{
+	color:#E32636;
+}
+
+/************ Biography ***************/
+
+table{
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+td{
+	padding-top: 0.5em;
+	font-size: .75em;
+}
+
+td h4{
+	color: #0076A3;
+	padding-top: 1.5em;
+	font-size: 1em;
+}
+
+
+/************ Contact ***************/
+
+#mail, #twitter, #phone{
+	display: inline-block;
+	position: relative;
+	float: left;
+	clear: left;
+	margin: 1% 5% 1% 5%;
+	background: white;
+	border: white solid 5px;
+	border-radius: 20%;
+	max-width: 10%;
+}
+
+.info{
+	position:relative;
+	float:right;
+	clear:right;
+	margin: 2.5% 10% 2% 0;
+}
+
+/************ Media Queries ***************/
+/*	320: Smartphone Portrait
+    481: Smartphone Landscape
+    641 or 768 ???: IPad Portrait ???
+    961: IPad Landscape / Small Laptop ???
+    1025: Desktop and Laptop
+    1281: Wide Screen */
+
+@media (min-width: 960px){
+/************ HEADER ***************/
+
+h3{
+	font-size: 1.5em;
+}
+
+h4{
+	font-size: 1em;
+}
+
+nav li, a, a:visited{
+	font-size: 1em;
+}
+
+nav{
+	margin: 2% auto 1.5% auto;
+}
+
+/************ About Me ***************/
+.accordion h3{
+	line-height: 1.5em;
+}
+
+p, li{
+	font-size: 1em;
+}
+
+.accordion p{
+	width:100%;
+}
+
+
+/************ Gallery ***************/
+
+.coding_gallery, .baking_gallery{
+	max-width:45%;
+}
+.coding_gallery img, .baking_gallery img{
+	max-width: 30%;
+	margin: 5% 4% 2% 2%;
+	float: left;
+}
+
+.coding_gallery h4, .baking_gallery h4{
+	position: relative;
+	display: inline-block;
+	float: center;
+	margin: 4% 0 2% 0%;
+	text-align: left;
+}
+
+.coding_gallery p, .baking_gallery p{
+	max-width: 40%;
+	text-align: left;
+	float: center;	
+}
+
+#hackathon img, #zoo img, #neverland img{
+	max-width: 45%;
+}
+
+#coding, #buildingblocks, #catinhat{
+	display: inline-block;
+	position: relative;
+	float:right;
+	clear:right;
+}
+
+#hackathon, #neverland, #zoo{
+	display: inline-block;
+	position: relative;
+	float:left;
+	clear:left;
+}
+
+#neverland{
+	margin-top:3.5%;
+}
+
+/************ Biography ***************/
+
+table{
+	margin-top: 2%;
+	margin-left: 10%;
+}
+
+td{
+	font-size: 1em;
+}
+
+td h4{
+	font-size: 1.25em;
+}
+
+
+/************ Contact ***************/
+
+#mail, #twitter, #phone{
+	margin: 1% 0 1% 47.5%;
+}
+#mail:hover, #twitter:hover, #phone:hover{
+	background: #E32636;
+}
+
+.info{
+	display:none;
+}
+}
+    
+
+
